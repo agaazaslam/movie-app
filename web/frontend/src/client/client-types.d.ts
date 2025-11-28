@@ -210,6 +210,7 @@ export type MovieDbCreateMovieResponseOK = { 'id'?: number | null; 'title'?: str
 export type MovieDbCreateMovieResponses =
   MovieDbCreateMovieResponseOK
 
+
 export type MovieDbUpdateMoviesRequest = {
   'fields'?: Array<'createdAt' | 'description' | 'id' | 'popularity' | 'posterUrl' | 'rating' | 'releasedYear' | 'title' | 'updatedAt' | 'voteAverage' | 'votesCount'>;
   'where.createdAt.eq'?: string;
@@ -385,8 +386,7 @@ export type MovieDbGetMovieByIdRequest = {
  * A Movie
  */
 export type MovieDbGetMovieByIdResponseOK = { 'id'?: number | null; 'title'?: string | null; 'description'?: string | null; 'releasedYear'?: number | null; 'popularity'?: number | null; 'posterUrl'?: string | null; 'rating'?: number | null; 'votesCount'?: number | null; 'voteAverage'?: number | null; 'createdAt'?: string | null; 'updatedAt'?: string | null }
-export type MovieDbGetMovieByIdResponses =
-  MovieDbGetMovieByIdResponseOK
+export type MovieDbGetMovieByIdResponses = MovieDbGetMovieByIdResponseOK
 
 export type MovieDbUpdateMovieRequest = {
   'fields'?: Array<'createdAt' | 'description' | 'id' | 'popularity' | 'posterUrl' | 'rating' | 'releasedYear' | 'title' | 'updatedAt' | 'voteAverage' | 'votesCount'>;
@@ -423,7 +423,7 @@ export type MovieDbDeleteMoviesResponses =
   MovieDbDeleteMoviesResponseOK
 
 export type GetDbTestRequest = {
-  
+
 }
 
 export type GetDbTestResponseOK = unknown
@@ -431,7 +431,7 @@ export type GetDbTestResponses =
   FullResponse<GetDbTestResponseOK, 200>
 
 export type GetDbPopularRequest = {
-  
+
 }
 
 export type GetDbPopularResponseOK = unknown
@@ -439,7 +439,7 @@ export type GetDbPopularResponses =
   FullResponse<GetDbPopularResponseOK, 200>
 
 export type GetDbTrendingRequest = {
-  
+
 }
 
 export type GetDbTrendingResponseOK = unknown
@@ -447,7 +447,7 @@ export type GetDbTrendingResponses =
   FullResponse<GetDbTrendingResponseOK, 200>
 
 export type GetDbSearchRequest = {
-  
+
 }
 
 export type GetDbSearchResponseOK = unknown

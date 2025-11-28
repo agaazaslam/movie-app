@@ -65,6 +65,7 @@ async function _movieDbGetMovies(url, request) {
 export const movieDbGetMovies = async (request) => {
   return await _movieDbGetMovies(baseUrl, request)
 }
+
 async function _movieDbCreateMovie(url, request) {
   const queryParameters = ['fields']
   const searchParams = new URLSearchParams()

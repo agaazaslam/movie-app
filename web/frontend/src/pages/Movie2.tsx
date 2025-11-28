@@ -1,49 +1,14 @@
-import { useEffect, useState } from "react";
-import { movieDbGetMovies, setBaseUrl } from '../client/client.mjs'
-import { useParams } from "react-router";
-import type { MovieDbGetMovieByIdResponses } from "../client/client-types";
 
-type Movie = MovieDbGetMovieByIdResponses;
-
-
-setBaseUrl(window.location.origin);
-
-
-const Movie = () => {
-
-  const [movie, setMovie] = useState<Movie | null>(null);
-  const { movieId } = useParams();
-
-
-  const fetchMovie = async () => {
-
-    try {
-      const response = await movieDbGetMovies({ "where.id.eq": movieId, });
-      console.log(movieId);
-      console.log("movie not found");
-      console.log(response);
-      setMovie(response[0]);
-
-    } catch (error) {
-
-      console.log(error);
-
-    }
-
-  }
-
-  useEffect(() => { fetchMovie() }, [movieId]);
-
+export default function MovieDetails({ movie }) {
 
   return (
-
     <div className="w-full min-h-screen bg-black text-white">
 
       {/* Top Banner */}
       <div
         className="h-[400px] w-full bg-cover bg-center relative"
         style={{
-          backgroundImage: `url(${"https://placehold.co/600x400"})`,
+          backgroundImage: `url(${movie.backdropUrl || movie.posterUrl})`,
         }}
       >
         {/* Dark overlay */}
@@ -141,16 +106,8 @@ const Movie = () => {
             </div>
           ))}
         </div>
-      </div> )
+      </div>
 
     </div>
-
   );
-
-
-
-
-
 }
-
-export default Movie
