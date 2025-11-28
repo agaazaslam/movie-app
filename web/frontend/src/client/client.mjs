@@ -28,7 +28,7 @@ function headersToJSON(headers) {
   return output
 }
 
-async function _movieDbGetMovies (url, request) {
+async function _movieDbGetMovies(url, request) {
   const queryParameters = ['limit', 'offset', 'totalCount', 'cursor', 'startAfter', 'endBefore', 'fields', 'where.createdAt.eq', 'where.createdAt.neq', 'where.createdAt.gt', 'where.createdAt.gte', 'where.createdAt.lt', 'where.createdAt.lte', 'where.createdAt.like', 'where.createdAt.ilike', 'where.createdAt.in', 'where.createdAt.nin', 'where.createdAt.contains', 'where.createdAt.contained', 'where.createdAt.overlaps', 'where.description.eq', 'where.description.neq', 'where.description.gt', 'where.description.gte', 'where.description.lt', 'where.description.lte', 'where.description.like', 'where.description.ilike', 'where.description.in', 'where.description.nin', 'where.description.contains', 'where.description.contained', 'where.description.overlaps', 'where.id.eq', 'where.id.neq', 'where.id.gt', 'where.id.gte', 'where.id.lt', 'where.id.lte', 'where.id.like', 'where.id.ilike', 'where.id.in', 'where.id.nin', 'where.id.contains', 'where.id.contained', 'where.id.overlaps', 'where.popularity.eq', 'where.popularity.neq', 'where.popularity.gt', 'where.popularity.gte', 'where.popularity.lt', 'where.popularity.lte', 'where.popularity.like', 'where.popularity.ilike', 'where.popularity.in', 'where.popularity.nin', 'where.popularity.contains', 'where.popularity.contained', 'where.popularity.overlaps', 'where.posterUrl.eq', 'where.posterUrl.neq', 'where.posterUrl.gt', 'where.posterUrl.gte', 'where.posterUrl.lt', 'where.posterUrl.lte', 'where.posterUrl.like', 'where.posterUrl.ilike', 'where.posterUrl.in', 'where.posterUrl.nin', 'where.posterUrl.contains', 'where.posterUrl.contained', 'where.posterUrl.overlaps', 'where.rating.eq', 'where.rating.neq', 'where.rating.gt', 'where.rating.gte', 'where.rating.lt', 'where.rating.lte', 'where.rating.like', 'where.rating.ilike', 'where.rating.in', 'where.rating.nin', 'where.rating.contains', 'where.rating.contained', 'where.rating.overlaps', 'where.releasedYear.eq', 'where.releasedYear.neq', 'where.releasedYear.gt', 'where.releasedYear.gte', 'where.releasedYear.lt', 'where.releasedYear.lte', 'where.releasedYear.like', 'where.releasedYear.ilike', 'where.releasedYear.in', 'where.releasedYear.nin', 'where.releasedYear.contains', 'where.releasedYear.contained', 'where.releasedYear.overlaps', 'where.title.eq', 'where.title.neq', 'where.title.gt', 'where.title.gte', 'where.title.lt', 'where.title.lte', 'where.title.like', 'where.title.ilike', 'where.title.in', 'where.title.nin', 'where.title.contains', 'where.title.contained', 'where.title.overlaps', 'where.updatedAt.eq', 'where.updatedAt.neq', 'where.updatedAt.gt', 'where.updatedAt.gte', 'where.updatedAt.lt', 'where.updatedAt.lte', 'where.updatedAt.like', 'where.updatedAt.ilike', 'where.updatedAt.in', 'where.updatedAt.nin', 'where.updatedAt.contains', 'where.updatedAt.contained', 'where.updatedAt.overlaps', 'where.voteAverage.eq', 'where.voteAverage.neq', 'where.voteAverage.gt', 'where.voteAverage.gte', 'where.voteAverage.lt', 'where.voteAverage.lte', 'where.voteAverage.like', 'where.voteAverage.ilike', 'where.voteAverage.in', 'where.voteAverage.nin', 'where.voteAverage.contains', 'where.voteAverage.contained', 'where.voteAverage.overlaps', 'where.votesCount.eq', 'where.votesCount.neq', 'where.votesCount.gt', 'where.votesCount.gte', 'where.votesCount.lt', 'where.votesCount.lte', 'where.votesCount.like', 'where.votesCount.ilike', 'where.votesCount.in', 'where.votesCount.nin', 'where.votesCount.contains', 'where.votesCount.contained', 'where.votesCount.overlaps', 'where.or', 'orderby.createdAt', 'orderby.description', 'orderby.id', 'orderby.popularity', 'orderby.posterUrl', 'orderby.rating', 'orderby.releasedYear', 'orderby.title', 'orderby.updatedAt', 'orderby.voteAverage', 'orderby.votesCount']
   const searchParams = new URLSearchParams()
   if (request) {
@@ -65,7 +65,7 @@ async function _movieDbGetMovies (url, request) {
 export const movieDbGetMovies = async (request) => {
   return await _movieDbGetMovies(baseUrl, request)
 }
-async function _movieDbCreateMovie (url, request) {
+async function _movieDbCreateMovie(url, request) {
   const queryParameters = ['fields']
   const searchParams = new URLSearchParams()
   if (request) {
@@ -107,7 +107,7 @@ async function _movieDbCreateMovie (url, request) {
 export const movieDbCreateMovie = async (request) => {
   return await _movieDbCreateMovie(baseUrl, request)
 }
-async function _movieDbUpdateMovies (url, request) {
+async function _movieDbUpdateMovies(url, request) {
   const queryParameters = ['fields', 'where.createdAt.eq', 'where.createdAt.neq', 'where.createdAt.gt', 'where.createdAt.gte', 'where.createdAt.lt', 'where.createdAt.lte', 'where.createdAt.like', 'where.createdAt.ilike', 'where.createdAt.in', 'where.createdAt.nin', 'where.createdAt.contains', 'where.createdAt.contained', 'where.createdAt.overlaps', 'where.description.eq', 'where.description.neq', 'where.description.gt', 'where.description.gte', 'where.description.lt', 'where.description.lte', 'where.description.like', 'where.description.ilike', 'where.description.in', 'where.description.nin', 'where.description.contains', 'where.description.contained', 'where.description.overlaps', 'where.id.eq', 'where.id.neq', 'where.id.gt', 'where.id.gte', 'where.id.lt', 'where.id.lte', 'where.id.like', 'where.id.ilike', 'where.id.in', 'where.id.nin', 'where.id.contains', 'where.id.contained', 'where.id.overlaps', 'where.popularity.eq', 'where.popularity.neq', 'where.popularity.gt', 'where.popularity.gte', 'where.popularity.lt', 'where.popularity.lte', 'where.popularity.like', 'where.popularity.ilike', 'where.popularity.in', 'where.popularity.nin', 'where.popularity.contains', 'where.popularity.contained', 'where.popularity.overlaps', 'where.posterUrl.eq', 'where.posterUrl.neq', 'where.posterUrl.gt', 'where.posterUrl.gte', 'where.posterUrl.lt', 'where.posterUrl.lte', 'where.posterUrl.like', 'where.posterUrl.ilike', 'where.posterUrl.in', 'where.posterUrl.nin', 'where.posterUrl.contains', 'where.posterUrl.contained', 'where.posterUrl.overlaps', 'where.rating.eq', 'where.rating.neq', 'where.rating.gt', 'where.rating.gte', 'where.rating.lt', 'where.rating.lte', 'where.rating.like', 'where.rating.ilike', 'where.rating.in', 'where.rating.nin', 'where.rating.contains', 'where.rating.contained', 'where.rating.overlaps', 'where.releasedYear.eq', 'where.releasedYear.neq', 'where.releasedYear.gt', 'where.releasedYear.gte', 'where.releasedYear.lt', 'where.releasedYear.lte', 'where.releasedYear.like', 'where.releasedYear.ilike', 'where.releasedYear.in', 'where.releasedYear.nin', 'where.releasedYear.contains', 'where.releasedYear.contained', 'where.releasedYear.overlaps', 'where.title.eq', 'where.title.neq', 'where.title.gt', 'where.title.gte', 'where.title.lt', 'where.title.lte', 'where.title.like', 'where.title.ilike', 'where.title.in', 'where.title.nin', 'where.title.contains', 'where.title.contained', 'where.title.overlaps', 'where.updatedAt.eq', 'where.updatedAt.neq', 'where.updatedAt.gt', 'where.updatedAt.gte', 'where.updatedAt.lt', 'where.updatedAt.lte', 'where.updatedAt.like', 'where.updatedAt.ilike', 'where.updatedAt.in', 'where.updatedAt.nin', 'where.updatedAt.contains', 'where.updatedAt.contained', 'where.updatedAt.overlaps', 'where.voteAverage.eq', 'where.voteAverage.neq', 'where.voteAverage.gt', 'where.voteAverage.gte', 'where.voteAverage.lt', 'where.voteAverage.lte', 'where.voteAverage.like', 'where.voteAverage.ilike', 'where.voteAverage.in', 'where.voteAverage.nin', 'where.voteAverage.contains', 'where.voteAverage.contained', 'where.voteAverage.overlaps', 'where.votesCount.eq', 'where.votesCount.neq', 'where.votesCount.gt', 'where.votesCount.gte', 'where.votesCount.lt', 'where.votesCount.lte', 'where.votesCount.like', 'where.votesCount.ilike', 'where.votesCount.in', 'where.votesCount.nin', 'where.votesCount.contains', 'where.votesCount.contained', 'where.votesCount.overlaps', 'where.or']
   const searchParams = new URLSearchParams()
   if (request) {
@@ -149,7 +149,7 @@ async function _movieDbUpdateMovies (url, request) {
 export const movieDbUpdateMovies = async (request) => {
   return await _movieDbUpdateMovies(baseUrl, request)
 }
-async function _movieDbGetMovieById (url, request) {
+async function _movieDbGetMovieById(url, request) {
   const queryParameters = ['fields']
   const searchParams = new URLSearchParams()
   if (request) {
@@ -186,7 +186,7 @@ async function _movieDbGetMovieById (url, request) {
 export const movieDbGetMovieById = async (request) => {
   return await _movieDbGetMovieById(baseUrl, request)
 }
-async function _movieDbUpdateMovie (url, request) {
+async function _movieDbUpdateMovie(url, request) {
   const queryParameters = ['fields']
   const searchParams = new URLSearchParams()
   if (request) {
@@ -228,7 +228,7 @@ async function _movieDbUpdateMovie (url, request) {
 export const movieDbUpdateMovie = async (request) => {
   return await _movieDbUpdateMovie(baseUrl, request)
 }
-async function _movieDbDeleteMovies (url, request) {
+async function _movieDbDeleteMovies(url, request) {
   const queryParameters = ['fields']
   const searchParams = new URLSearchParams()
   if (request) {
@@ -270,7 +270,7 @@ async function _movieDbDeleteMovies (url, request) {
 export const movieDbDeleteMovies = async (request) => {
   return await _movieDbDeleteMovies(baseUrl, request)
 }
-async function _getDbTest (url, request) {
+async function _getDbTest(url, request) {
   const headers = {
     ...defaultHeaders
   }
@@ -300,7 +300,7 @@ async function _getDbTest (url, request) {
 export const getDbTest = async (request) => {
   return await _getDbTest(baseUrl, request)
 }
-async function _getDbPopular (url, request) {
+async function _getDbPopular(url, request) {
   const headers = {
     ...defaultHeaders
   }
@@ -330,7 +330,7 @@ async function _getDbPopular (url, request) {
 export const getDbPopular = async (request) => {
   return await _getDbPopular(baseUrl, request)
 }
-async function _getDbTrending (url, request) {
+async function _getDbTrending(url, request) {
   const headers = {
     ...defaultHeaders
   }
@@ -360,7 +360,7 @@ async function _getDbTrending (url, request) {
 export const getDbTrending = async (request) => {
   return await _getDbTrending(baseUrl, request)
 }
-async function _getDbSearch (url, request) {
+async function _getDbSearch(url, request) {
   const headers = {
     ...defaultHeaders
   }
@@ -390,7 +390,7 @@ async function _getDbSearch (url, request) {
 export const getDbSearch = async (request) => {
   return await _getDbSearch(baseUrl, request)
 }
-export default function build (url, options) {
+export default function build(url, options) {
   url = sanitizeUrl(url)
   if (options?.headers) {
     defaultHeaders = options.headers
