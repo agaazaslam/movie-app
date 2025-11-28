@@ -89,56 +89,109 @@
       {
         "cid": 1,
         "name": "title",
-        "type": "TEXT",
-        "notnull": 1,
-        "dflt_value": null,
-        "pk": 0,
-        "hidden": 0,
-        "column_name": "title",
-        "udt_name": "text",
-        "is_nullable": "NO",
-        "is_generated": "NO"
-      }
-    ]
-  },
-  {
-    "schema": null,
-    "table": "actors",
-    "constraints": [
-      {
-        "column_name": "id",
-        "constraint_type": "PRIMARY KEY"
-      }
-    ],
-    "columns": [
-      {
-        "cid": 0,
-        "name": "id",
-        "type": "INTEGER",
-        "notnull": 0,
-        "dflt_value": null,
-        "pk": 1,
-        "hidden": 0,
-        "column_name": "id",
-        "udt_name": "integer",
-        "is_nullable": "NO",
-        "is_generated": "NO"
-      },
-      {
-        "cid": 1,
-        "name": "name",
         "type": "VARCHAR(255)",
         "notnull": 1,
         "dflt_value": null,
         "pk": 0,
         "hidden": 0,
-        "column_name": "name",
+        "column_name": "title",
         "udt_name": "varchar",
         "is_nullable": "NO",
         "is_generated": "NO"
       },
       {
         "cid": 2,
+        "name": "description",
+        "type": "VARCHAR(255)",
+        "notnull": 1,
+        "dflt_value": null,
+        "pk": 0,
+        "hidden": 0,
+        "column_name": "description",
+        "udt_name": "varchar",
+        "is_nullable": "NO",
+        "is_generated": "NO"
+      },
+      {
+        "cid": 3,
+        "name": "released_year",
+        "type": "INTEGER",
+        "notnull": 1,
+        "dflt_value": null,
+        "pk": 0,
+        "hidden": 0,
+        "column_name": "released_year",
+        "udt_name": "integer",
+        "is_nullable": "NO",
+        "is_generated": "NO"
+      },
+      {
+        "cid": 4,
+        "name": "popularity",
+        "type": "INTEGER",
+        "notnull": 1,
+        "dflt_value": null,
+        "pk": 0,
+        "hidden": 0,
+        "column_name": "popularity",
+        "udt_name": "integer",
+        "is_nullable": "NO",
+        "is_generated": "NO"
+      },
+      {
+        "cid": 5,
+        "name": "poster_url",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0,
+        "hidden": 0,
+        "column_name": "poster_url",
+        "udt_name": "text",
+        "is_nullable": "YES",
+        "is_generated": "NO"
+      },
+      {
+        "cid": 6,
+        "name": "rating",
+        "type": "REAL",
+        "notnull": 0,
+        "dflt_value": "0",
+        "pk": 0,
+        "hidden": 0,
+        "column_name": "rating",
+        "udt_name": "real",
+        "is_nullable": "YES",
+        "is_generated": "NO"
+      },
+      {
+        "cid": 7,
+        "name": "votes_count",
+        "type": "INTEGER",
+        "notnull": 0,
+        "dflt_value": "0",
+        "pk": 0,
+        "hidden": 0,
+        "column_name": "votes_count",
+        "udt_name": "integer",
+        "is_nullable": "YES",
+        "is_generated": "NO"
+      },
+      {
+        "cid": 8,
+        "name": "vote_average",
+        "type": "REAL",
+        "notnull": 0,
+        "dflt_value": "0",
+        "pk": 0,
+        "hidden": 0,
+        "column_name": "vote_average",
+        "udt_name": "real",
+        "is_nullable": "YES",
+        "is_generated": "NO"
+      },
+      {
+        "cid": 9,
         "name": "created_at",
         "type": "DATETIME",
         "notnull": 0,
@@ -151,7 +204,7 @@
         "is_generated": "NO"
       },
       {
-        "cid": 3,
+        "cid": 10,
         "name": "updated_at",
         "type": "DATETIME",
         "notnull": 0,

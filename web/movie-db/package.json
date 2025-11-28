@@ -10,7 +10,8 @@
     "fastify": "^5.0.0"
   },
   "dependencies": {
-    "@platformatic/db": "^3.26.0"
+    "@platformatic/db": "^3.26.0",
+    "sqlite3": "^5.1.7"
   },
   "engines": {
     "node": ">=22.19.0"
