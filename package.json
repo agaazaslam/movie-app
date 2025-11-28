@@ -1,0 +1,18 @@
+{
+  "name": "first-app",
+  "scripts": {
+    "dev": "wattpm dev",
+    "build": "wattpm build",
+    "start": "wattpm start"
+  },
+  "dependencies": {
+    "@platformatic/gateway": "^3.26.0",
+    "wattpm": "^3.26.0"
+  },
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "workspaces": [
+    "web/*"
+  ]
+}
